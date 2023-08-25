@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Incomplete from './Components/Incomplete'
+import Todo from './Components/Todo'
+import Doing from './Components/Doing'
+import UnderReview from './Components/UnderReview'
+import Complete from './Components/Complete'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Incomplete />
+      <Todo />
+      <Doing />
+      <UnderReview />
+      <Complete />
+    </>
+  )
 }
 
-export default App;
+export default App
